@@ -5,10 +5,6 @@ namespace UsersMVC.Services
 {
     public class UserService : IUserService
     {
-        public UserService()
-        {
-        }
-
         public async Task<List<User>> GetUsersFromApiAsync()
         {
             var client = new HttpClient();

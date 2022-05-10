@@ -1,13 +1,5 @@
 ﻿namespace UsersMVC.DTOs
 {
-
-
-
-    //public class TypiCodeDTO
-    //{
-    //    public List<User> users { get; set; }
-    //}
-
     public class User
         {
             public int id { get; set; }
