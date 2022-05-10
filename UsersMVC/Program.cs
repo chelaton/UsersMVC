@@ -7,7 +7,8 @@ builder.Services.AddScoped<IUserService, UserService>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-
+//add healthcheck
+builder.Services.AddHealthChecks();
 
 var app = builder.Build();
 
@@ -23,6 +24,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.MapHealthChecks("/health");
 
 app.UseAuthorization();
 
